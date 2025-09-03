@@ -21,9 +21,10 @@
 ```bash
 # 方式一（推荐）：clone 到 ComfyUI/custom_nodes 目录
 cd <your-ComfyUI>/custom_nodes
-git clone https://github.com/<yourname>/ComfyUI-OpenAI-Ask.git
+git clone https://github.com/Goldlionren/ComfyUI-OpenAI-Ask.git
 
 # 安装依赖（确保在 ComfyUI 使用的 Python 环境）
 pip install -r ComfyUI-OpenAI-Ask/requirements.txt
 
 # 重启 ComfyUI
+
