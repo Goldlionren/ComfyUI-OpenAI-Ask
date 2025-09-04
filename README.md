@@ -10,6 +10,23 @@
   <img src="assets/screenshot-2.png" width="720"/>
 </p>
 
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="assets/5.png" width="900" alt="Code view – node core logic">
+</p>
+
+| ![Workflow – positive/negative outputs](assets/6.png) | ![GGUF models (MiniCPM-V-4.5)](assets/7.png) |
+|---|---|
+| ComfyUI 工作流与四路输出（positive / negative / answer_text / raw_json） | MiniCPM-V-4.5 GGUF 与 mmproj 文件示意 |
+
+<p align="center">
+  <img src="assets/screenshot-4.png" width="900" alt="MiniCPM-V repo – background info">
+</p>
+
+
+
 ## ✨ 特性
 - 正/负提示词**自动拆分**（会裁掉 `Prompt:` 之前所有内容）
 - 负向标签**多写法兼容**：`Negative / Negative Prompt / Avoid / Disallow / Do not / 负向 / 避免 / 不要`
@@ -27,18 +44,4 @@ git clone https://github.com/Goldlionren/ComfyUI-OpenAI-Ask.git
 pip install -r ComfyUI-OpenAI-Ask/requirements.txt
 
 # 重启 ComfyUI
-
-## 📸 Screenshots
-
-<p align="center">
-  <img src="assets/5.png" width="900" alt="Code view – node core logic">
-</p>
-
-| ![Workflow – positive/negative outputs](assets/6.png) | ![GGUF models (MiniCPM-V-4.5)](assets/7.png) |
-|---|---|
-| ComfyUI 工作流与四路输出（positive / negative / answer_text / raw_json） | MiniCPM-V-4.5 GGUF 与 mmproj 文件示意 |
-
-<p align="center">
-  <img src="assets/screenshot-4.png" width="900" alt="MiniCPM-V repo – background info">
-</p>
 
