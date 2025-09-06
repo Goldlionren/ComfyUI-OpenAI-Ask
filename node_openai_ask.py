@@ -69,6 +69,11 @@ class OpenAIAskNode:
                     "default": "content_only",
                     "tooltip": "content_only：只用 message.content；auto：content 优先否则 reasoning；reasoning_only：只用 reasoning_content"
                 }),
+                "prepend_positive": ("STRING", {
+                    "multiline": True,
+                    "default": "",
+                    "tooltip": "会被追加到 positive 输出的最前面，例如：艺术照，全身照，脸部特写"
+                }),
                 "image": ("IMAGE",),
                 "api_key": ("STRING", {
                     "multiline": False,
@@ -180,6 +185,32 @@ class OpenAIAskNode:
         t = text.replace("\r\n", "\n")
         t = re.sub(r'^\s*(用户|User)\s*[:：]?\s*\n?', '', t, flags=re.IGNORECASE)
         return t.strip()
+    
+    @staticmethod
+    def _prepend_to_positive(prefix: str, positive: str) -> str:
+        """
+        将 prefix 追加到 positive 最前面，做一下分隔符与首尾清理。
+        规则：
+        - 若两者都有内容，则用中文逗号 '，'（任一侧包含中文逗号时）或英文逗号 ', ' 连接
+        - 去掉开头/结尾的逗号、分号与空格
+        """
+        def _clean(s: str) -> str:
+            if not isinstance(s, str):
+                return ""
+            # 去掉首尾的逗号/分号/空白
+            return re.sub(r'^[,，;\s]+|[,，;\s]+$', '', s.strip())
+
+        pfx = _clean(prefix)
+        pos = _clean(positive)
+
+        if not pfx:
+            return pos
+        if not pos:
+            return pfx
+
+        # 选择分隔符：若任一侧包含中文逗号，则优先中文逗号，否则英文逗号+空格
+        delim = '，' if ('，' in pfx or '，' in pos) else ', '
+        return f"{pfx}{delim}{pos}"
 
     @staticmethod
     def _split_positive_negative(text: str) -> Tuple[str, str]:
@@ -264,6 +295,7 @@ class OpenAIAskNode:
             use_vision: str,
             content_source: str = "content_only",
             image=None,
+            prepend_positive: str = "",
             api_key: str = "",
             extra_headers_json: str = "",
             timeout_sec: int = 60,
@@ -340,6 +372,9 @@ class OpenAIAskNode:
 
                     # —— 拆分正/负：在原始 out_src 上做（避免先清洗把 'Prompt:' 删掉）——
                     positive, negative = self._split_positive_negative(out_src)
+
+                    # 新增：把额外文本前置到 positive
+                    positive = self._prepend_to_positive(prepend_positive, positive)
 
                     # —— 完整文本做一次轻度清洗（删掉开头“用户/User”等）——
                     answer_text = self._sanitize_reasoning_text(out_src)
