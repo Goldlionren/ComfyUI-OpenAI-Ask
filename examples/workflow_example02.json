@@ -1,0 +1,694 @@
+{
+  "id": "9d05247d-846d-482d-a1e0-7e4bc5972871",
+  "revision": 0,
+  "last_node_id": 13,
+  "last_link_id": 20,
+  "nodes": [
+    {
+      "id": 4,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -2087.94189453125,
+        -503.5842590332031
+      ],
+      "size": [
+        1269.8719482421875,
+        88
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "link": 13
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "localized_name": "STRING",
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "f2838ed5e59de4d73cde5c98354b87a8d3200190",
+        "Node name for S&R": "ShowText|pysssss",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "deformed, blurry, bad anatomy, extra limbs, poorly drawn face, mutation, mutated, ugly, tiling, poorly drawn hands, disfigured, out of frame, extra fingers"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 5,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -2086.082275390625,
+        -361.9798583984375
+      ],
+      "size": [
+        1275.2108154296875,
+        158.79824829101562
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "link": 14
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "localized_name": "STRING",
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "f2838ed5e59de4d73cde5c98354b87a8d3200190",
+        "Node name for S&R": "ShowText|pysssss",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "Prompt: beautiful detailed face, young woman, long brown hair, delicate features, soft lighting, creamy skin, looking at viewer, photorealistic, 8k\nNegative: deformed, blurry, bad anatomy, extra limbs, poorly drawn face, mutation, mutated, ugly, tiling, poorly drawn hands, disfigured, out of frame, extra fingers\n\n[latency: 25.31s]"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -2088.65234375,
+        -143.50531005859375
+      ],
+      "size": [
+        1283.7784423828125,
+        369.5619201660156
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "link": 15
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "localized_name": "STRING",
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "f2838ed5e59de4d73cde5c98354b87a8d3200190",
+        "Node name for S&R": "ShowText|pysssss",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "{\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"Prompt: beautiful detailed face, young woman, long brown hair, delicate features, soft lighting, creamy skin, looking at viewer, photorealistic, 8k\\nNegative: deformed, blurry, bad anatomy, extra limbs, poorly drawn face, mutation, mutated, ugly, tiling, poorly drawn hands, disfigured, out of frame, extra fingers\"\n      }\n    }\n  ],\n  \"created\": 1757148545,\n  \"model\": \"minicpm-v-4.5\",\n  \"system_fingerprint\": \"b6397-186415d5\",\n  \"object\": \"chat.completion\",\n  \"usage\": {\n    \"completion_tokens\": 71,\n    \"prompt_tokens\": 320,\n    \"total_tokens\": 391\n  },\n  \"id\": \"chatcmpl-kMl5VpRW0dIV82d4vsJVIc8anFUfCvum\",\n  \"timings\": {\n    \"prompt_n\": 262,\n    \"prompt_ms\": 9167.882,\n    \"prompt_per_token_ms\": 34.99191603053435,\n    \"prompt_per_second\": 28.578029254739537,\n    \"predicted_n\": 71,\n    \"predicted_ms\": 15927.689,\n    \"predicted_per_token_ms\": 224.33364788732393,\n    \"predicted_per_second\": 4.4576460527324455\n  }\n}"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -2091.18505859375,
+        -698.6782836914062
+      ],
+      "size": [
+        1271.252685546875,
+        130.4929656982422
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "link": 12
+        }
+      ],
+      "outputs": [
+        {
+          "label": "STRING",
+          "localized_name": "STRING",
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "f2838ed5e59de4d73cde5c98354b87a8d3200190",
+        "Node name for S&R": "ShowText|pysssss",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "艺术照，半身照，微距镜头，眼部特写，裸体美女，beautiful detailed face, young woman, long brown hair, delicate features, soft lighting, creamy skin, looking at viewer, photorealistic, 8k"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 10,
+      "type": "OpenAIAsk",
+      "pos": [
+        -2566.297119140625,
+        -523.2431030273438
+      ],
+      "size": [
+        400,
+        642
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "image",
+          "localized_name": "image",
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 11
+        },
+        {
+          "label": "question",
+          "localized_name": "question",
+          "name": "question",
+          "type": "STRING",
+          "widget": {
+            "name": "question"
+          },
+          "link": null
+        },
+        {
+          "label": "api_base",
+          "localized_name": "api_base",
+          "name": "api_base",
+          "type": "STRING",
+          "widget": {
+            "name": "api_base"
+          },
+          "link": null
+        },
+        {
+          "label": "endpoint_path",
+          "localized_name": "endpoint_path",
+          "name": "endpoint_path",
+          "type": "STRING",
+          "widget": {
+            "name": "endpoint_path"
+          },
+          "link": null
+        },
+        {
+          "label": "model",
+          "localized_name": "model",
+          "name": "model",
+          "type": "STRING",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "label": "temperature",
+          "localized_name": "temperature",
+          "name": "temperature",
+          "type": "FLOAT",
+          "widget": {
+            "name": "temperature"
+          },
+          "link": null
+        },
+        {
+          "label": "top_p",
+          "localized_name": "top_p",
+          "name": "top_p",
+          "type": "FLOAT",
+          "widget": {
+            "name": "top_p"
+          },
+          "link": null
+        },
+        {
+          "label": "max_tokens",
+          "localized_name": "max_tokens",
+          "name": "max_tokens",
+          "type": "INT",
+          "widget": {
+            "name": "max_tokens"
+          },
+          "link": null
+        },
+        {
+          "label": "system_prompt",
+          "localized_name": "system_prompt",
+          "name": "system_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": null
+        },
+        {
+          "label": "use_vision",
+          "localized_name": "use_vision",
+          "name": "use_vision",
+          "type": "COMBO",
+          "widget": {
+            "name": "use_vision"
+          },
+          "link": null
+        },
+        {
+          "label": "content_source",
+          "localized_name": "content_source",
+          "name": "content_source",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "content_source"
+          },
+          "link": null
+        },
+        {
+          "label": "prepend_positive",
+          "localized_name": "prepend_positive",
+          "name": "prepend_positive",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "prepend_positive"
+          },
+          "link": 20
+        },
+        {
+          "label": "api_key",
+          "localized_name": "api_key",
+          "name": "api_key",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "label": "extra_headers_json",
+          "localized_name": "extra_headers_json",
+          "name": "extra_headers_json",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "extra_headers_json"
+          },
+          "link": null
+        },
+        {
+          "label": "timeout_sec",
+          "localized_name": "timeout_sec",
+          "name": "timeout_sec",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "timeout_sec"
+          },
+          "link": null
+        },
+        {
+          "label": "max_side",
+          "localized_name": "max_side",
+          "name": "max_side",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "max_side"
+          },
+          "link": null
+        },
+        {
+          "label": "image_format",
+          "localized_name": "image_format",
+          "name": "image_format",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "image_format"
+          },
+          "link": null
+        },
+        {
+          "label": "jpeg_quality",
+          "localized_name": "jpeg_quality",
+          "name": "jpeg_quality",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "jpeg_quality"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "positive",
+          "localized_name": "positive",
+          "name": "positive",
+          "type": "STRING",
+          "links": [
+            12
+          ]
+        },
+        {
+          "label": "negative",
+          "localized_name": "negative",
+          "name": "negative",
+          "type": "STRING",
+          "links": [
+            13
+          ]
+        },
+        {
+          "label": "answer_text",
+          "localized_name": "answer_text",
+          "name": "answer_text",
+          "type": "STRING",
+          "links": [
+            14
+          ]
+        },
+        {
+          "label": "raw_json",
+          "localized_name": "raw_json",
+          "name": "raw_json",
+          "type": "STRING",
+          "links": [
+            15
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "Goldlionren/ComfyUI-OpenAI-Ask",
+        "ver": "998a04bba58f7ce6690dad5fe4e4977c80e2bd2a",
+        "Node name for S&R": "OpenAIAsk",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "question": true,
+            "api_base": true,
+            "endpoint_path": true,
+            "model": true,
+            "temperature": true,
+            "top_p": true,
+            "max_tokens": true,
+            "system_prompt": true,
+            "use_vision": true,
+            "content_source": true,
+            "prepend_positive": true,
+            "api_key": true,
+            "extra_headers_json": true,
+            "timeout_sec": true,
+            "max_side": true,
+            "image_format": true,
+            "jpeg_quality": true
+          },
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        "Provide a detailed prompt based on this image. Output exactly two lines:\nPrompt: xxx\nNegative: xxx",
+        "http://127.0.0.1:10000",
+        "/v1/chat/completions",
+        "minicpm-v-4.5",
+        0.7,
+        0.9,
+        4096,
+        "You are a vision-language assistant. Return exactly TWO lines with no extra words:\nPrompt: <positive>\nNegative: <negative>",
+        "auto",
+        "content_only",
+        "",
+        "",
+        "",
+        60,
+        1984,
+        "PNG",
+        90,
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 13,
+      "type": "CR Text",
+      "pos": [
+        -2809.688232421875,
+        -42.86561584472656
+      ],
+      "size": [
+        210,
+        149.8245391845703
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "text",
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "text",
+          "localized_name": "text",
+          "name": "text",
+          "type": "*",
+          "links": [
+            20
+          ]
+        },
+        {
+          "label": "show_help",
+          "localized_name": "show_help",
+          "name": "show_help",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyroll",
+        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+        "Node name for S&R": "CR Text",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "text": true
+          },
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        "高清艺术照，半身照，微距镜头，眼部特写，东方美女",
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 2,
+      "type": "LoadImage",
+      "pos": [
+        -2822.6279296875,
+        -517.1825561523438
+      ],
+      "size": [
+        228.06320190429688,
+        400.8974304199219
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "image",
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "label": "upload",
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            11
+          ]
+        },
+        {
+          "label": "MASK",
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "image (5).png",
+        "image"
+      ]
+    }
+  ],
+  "links": [
+    [
+      11,
+      2,
+      0,
+      10,
+      0,
+      "IMAGE"
+    ],
+    [
+      12,
+      10,
+      0,
+      3,
+      0,
+      "STRING"
+    ],
+    [
+      13,
+      10,
+      1,
+      4,
+      0,
+      "STRING"
+    ],
+    [
+      14,
+      10,
+      2,
+      5,
+      0,
+      "STRING"
+    ],
+    [
+      15,
+      10,
+      3,
+      6,
+      0,
+      "STRING"
+    ],
+    [
+      20,
+      13,
+      0,
+      10,
+      11,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "ds": {
+      "scale": 0.7247295000000027,
+      "offset": [
+        2596.027568193479,
+        828.7440816532726
+      ]
+    }
+  },
+  "version": 0.4
+}
