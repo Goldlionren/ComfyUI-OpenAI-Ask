@@ -187,7 +187,7 @@
         }
       },
       "widgets_values": [
-        "艺术照，半身照，微距镜头，眼部特写，裸体美女，beautiful detailed face, young woman, long brown hair, delicate features, soft lighting, creamy skin, looking at viewer, photorealistic, 8k"
+        "艺术照，半身照，微距镜头，眼部特写，beautiful detailed face, young woman, long brown hair, delicate features, soft lighting, creamy skin, looking at viewer, photorealistic, 8k"
       ],
       "color": "#232",
       "bgcolor": "#353"
@@ -516,7 +516,7 @@
         "You are a vision-language assistant. Return exactly TWO lines with no extra words:\nPrompt: <positive>\nNegative: <negative>",
         "auto",
         "content_only",
-        "艺术照，半身照，微距镜头，眼部特写，裸体美女",
+        "艺术照，半身照，微距镜头，眼部特写",
         "",
         "",
         60,
