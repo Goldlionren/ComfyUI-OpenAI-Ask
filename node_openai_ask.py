@@ -48,7 +48,7 @@ class OpenAIAskNode:
                     "default": 1.0, "min": 0.0, "max": 1.0, "step": 0.05
                 }),
                 "max_tokens": ("INT", {
-                    "default": 512, "min": 1, "max": 8192, "step": 1
+                    "default": 512, "min": 1, "max": 32768, "step": 1
                 }),
                 "system_prompt": ("STRING", {
                     "multiline": True,
@@ -398,3 +398,4 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     "OpenAIAsk": "JR Node: OpenAI Ask (Vision/QA)",
 }
+
